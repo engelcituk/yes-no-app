@@ -1,4 +1,5 @@
-import 'package:flutter/material.dart'; //con imporM
+import 'package:flutter/material.dart';
+import 'package:yes_no_app/presentation/widgets/chat/my_message_bubble.dart'; //con imporM
 
 //stless para armar
 class ChatScreen extends StatelessWidget {
@@ -33,12 +34,14 @@ class _ChatView extends StatelessWidget {
         child: Column(
           children: [
             Expanded(
-                child: ListView.builder(
-                    itemCount: 100,
-                    itemBuilder: (context, index) {
-                      return Text('Indice: ${index + 1}');
-                    })),
-            Text('Hola mundo')
+              child: ListView.builder(
+                  itemCount: 100,
+                  itemBuilder: (context, index) {
+                    return const MyMessageBubble();
+                  }
+              )
+            ),
+            const Text('Hola mundo')
           ],
         ),
       ),
