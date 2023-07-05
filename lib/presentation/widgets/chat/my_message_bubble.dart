@@ -5,6 +5,7 @@ class MyMessageBubble extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    
     final colors = Theme.of( context).colorScheme; // busca el tema dentro del contexto
 
     return Column(
