@@ -5,12 +5,10 @@ class HerMessageBubble extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final colors =
-        Theme.of(context).colorScheme; // busca el tema dentro del contexto
+    final colors = Theme.of(context).colorScheme; // busca el tema dentro del contexto
 
     return Column(
-      crossAxisAlignment: CrossAxisAlignment
-          .start, //los elementos en la columna se alinean a la izquierda
+      crossAxisAlignment: CrossAxisAlignment.start, //los elementos en la columna se alinean a la izquierda
       children: [
         Container(
           decoration: BoxDecoration(
