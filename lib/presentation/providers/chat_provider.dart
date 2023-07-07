@@ -18,7 +18,7 @@ class ChatProvider extends ChangeNotifier {
 
     //verifico si el mensaje sea una pregunta
 
-    if (text.endsWith('?')) {
+    if (text.trim().endsWith('?')) {
       herReply();
     }
 
