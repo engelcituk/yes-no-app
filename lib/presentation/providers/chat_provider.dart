@@ -17,7 +17,8 @@ class ChatProvider extends ChangeNotifier {
     messageList.add(newMessage);
 
     //verifico si el mensaje sea una pregunta
-    if (text.endsWith('?')){
+
+    if (text.endsWith('?')) {
       herReply();
     }
 
@@ -27,6 +28,10 @@ class ChatProvider extends ChangeNotifier {
 
   Future<void> herReply() async {
     final herMessage = await getYesNoAnswer.getAnswer();
+    messageList.add(herMessage);
+    notifyListeners();
+
+    moveScrollToBottom();
   }
 
   Future<void> moveScrollToBottom() async {
