@@ -1,7 +1,9 @@
-import 'package:flutter/material.dart'; //con imporM
+import 'package:flutter/material.dart';
+import 'package:yes_no_app/domain/entities/message.dart'; //con imporM
 
 class HerMessageBubble extends StatelessWidget {
-  const HerMessageBubble({super.key});
+  final Message message;
+  const HerMessageBubble({super.key, required this.message});
 
   @override
   Widget build(BuildContext context) {
