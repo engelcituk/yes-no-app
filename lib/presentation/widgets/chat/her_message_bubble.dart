@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:yes_no_app/domain/entities/message.dart'; //con imporM
+// import 'package:yes_no_app/domain/entities/message.dart'; //con imporM
 
 class HerMessageBubble extends StatelessWidget {
-  final Message message;
-  const HerMessageBubble({super.key, required this.message});
+  // final Message message;
+  const HerMessageBubble({super.key });
 
   @override
   Widget build(BuildContext context) {
@@ -53,7 +53,7 @@ class _ImageBubble extends StatelessWidget {
               width: size.width * 0.7,
               height: 150,
               padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-              child: const Text('Mi amor 😍🥰😘❤️ está enviando una imagen'),
+              child: const Text( 'hola' ),
             );
           },
         ));
